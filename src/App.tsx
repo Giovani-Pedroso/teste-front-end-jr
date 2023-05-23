@@ -2,11 +2,18 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Mercadorias from "./components/Mercadorias";
+import Produtos1 from "./components/Produtos1";
 
 function App() {
   return (
     <div className="">
       <Navbar />
+      <Hero/>
+      <Mercadorias/>
+      <Produtos1/>
+      
       {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

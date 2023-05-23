@@ -1,0 +1,34 @@
+@use "../../../variables" as v;
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.containerImg{
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+    width: 128px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer:hover > .containerImg {
+    background-color: v.$rosa_primario;
+}
+
+.cardContainer:hover > .p {
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 20px;
+    color: #4E4E4E;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}

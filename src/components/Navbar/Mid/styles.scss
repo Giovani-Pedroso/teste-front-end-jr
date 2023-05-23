@@ -1,7 +1,11 @@
+@use "../../../variables" as v;
+
 .midNav {
   display: flex;
-  padding: 10px 60px;
+  padding: 10px v.$def_pading;
   align-items: center;
+  
+  //background-color: #000;
 }
 
 .searchBar {
@@ -9,9 +13,12 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  padding: 14px 24px;
-  margin: 10px 40px;
+ padding: 14px ;
+ margin: 10px 40px;
   min-width: 658px;
+  background-color: v.$gray_1;
+  //background-color: #000;
+  border-radius: 10px;
 }
 
 .input {
@@ -33,11 +40,14 @@ input:focus {
 
 .button {
   border: none;
-  background-color: none;
+  background-color: transparent;
+  cursor: pointer;
   font-size: 32px;
-  color: var(--main-gray1);
+  //color: var(--main-gray1);
 }
-
+.icon{
+  //fill: red;
+}
 .button:hover {
 }
 
