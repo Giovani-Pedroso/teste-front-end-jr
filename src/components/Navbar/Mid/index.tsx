@@ -1,9 +1,9 @@
-import logo from "./Logo.svg";
-import box from "./Packge.svg";
-import heart from "./Heart.svg";
-import cart from "./ShoppingCart.svg";
-import user from "./UserCircle.svg";
-import lupa from "./MagnifyingGlass.svg";
+import logo from "./imgs/Logo.svg";
+import box from "./imgs/Packge.svg";
+import heart from "./imgs/Heart.svg";
+import cart from "./imgs/ShoppingCart.svg";
+import user from "./imgs/UserCircle.svg";
+import lupa from "./imgs/MagnifyingGlass.svg";
 import "./styles.scss";
 
 type Props = {};
@@ -22,7 +22,7 @@ export default function MidNav(props: Props) {
         <div className="searchBar">
           <input className="input" placeholder="O que você está buscando?" />
           <button className="button">
-            <img src={lupa} className="iconTopNav" alt="escudo" />
+            <img src={lupa} className="icon" alt="escudo" />
           </button>
         </div>
         {/*
@@ -30,22 +30,22 @@ export default function MidNav(props: Props) {
         <div className="utilities">
           <div>
             <a href="#">
-              <img src={box} className="iconTopNav" alt="escudo" />
+              <img src={box} className="icon" alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={heart} className="iconTopNav" alt="escudo" />
+              <img src={heart} className="icon" alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={user} className="iconTopNav" alt="escudo" />
+              <img src={user} className="icon" alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={cart} className="iconTopNav" alt="escudo" />
+              <img src={cart} className="icon" alt="escudo" />
             </a>
           </div>
         </div>

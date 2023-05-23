@@ -1,6 +1,6 @@
-import shield from "./ShieldCheck.svg";
-import truck from "./Truck.svg";
-import card from "./CreditCard.svg";
+import shield from "./imgs/ShieldCheck.svg";
+import truck from "./imgs/Truck.svg";
+import card from "./imgs/CreditCard.svg";
 import "./styles.scss";
 type Props = {};
 
