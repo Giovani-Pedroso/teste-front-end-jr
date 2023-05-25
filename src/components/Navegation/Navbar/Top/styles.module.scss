@@ -1,0 +1,34 @@
+@use "../../../../variables" as v;
+
+.topNav {
+  margin: 0px auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.topNavSections {
+  align-items: center;
+  display: flex;
+}
+
+.iconTopNav {
+  margin-right: 10px;
+}
+
+.destaque {
+  color: v.$rosa_primario;
+  // background-color: r;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .topNav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .topNavSections {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}

@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import heroImg from "./imgs/hero4.webp";
 
 type Props = {};
 
@@ -6,6 +7,7 @@ export default function Hero(props: Props) {
   return (
     <main>
       <div className={styles.hero}>
+        <img className={styles.img} src={heroImg} alt="hero image" />
         <div className={styles.container}>
           <p className={styles.title}>
             Venha conhecer nossas <br />

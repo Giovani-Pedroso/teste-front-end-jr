@@ -1,7 +1,7 @@
 @use "../../../variables" as v;
 
 .hero {
-  background-image: url(./imgs/hero.webp);
+  // background-image: url(./imgs/hero4.webp);
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,6 +13,13 @@
   position: relative;
   color: black;
   mix-blend-mode: darken;
+}
+
+.img {
+  position: absolute;
+  z-index: 1;
+  // width: 100%;
+  height: 100%;
 }
 
 .title {
@@ -30,6 +37,7 @@
 }
 
 .container {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   padding: 0px v.$def_pading;
