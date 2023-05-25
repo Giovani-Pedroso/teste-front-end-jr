@@ -1,0 +1,60 @@
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 220;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: #041e50;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.description {
+  text-align: left;
+  font-size: 10px;
+  color: #222222;
+}
+
+.detalhes {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.close {
+  position: relative;
+  color: #222222;
+  background-color: transparent;
+  border: none;
+  top: 0px;
+  right: 0px;
+  font-size: 32px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.close {
+  color: red;
+}

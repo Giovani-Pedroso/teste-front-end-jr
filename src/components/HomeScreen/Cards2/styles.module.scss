@@ -1,0 +1,13 @@
+@use "../../../variables" as v;
+
+.section {
+  padding: 0px v.$def_pading;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 860px) {
+  .section {
+    flex-direction: column;
+  }
+}

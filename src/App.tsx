@@ -1,33 +1,45 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Mercadorias from "./components/Mercadorias";
-import Produtos1 from "./components/Produtos1";
+import Navbar from "./components/Navegation/Navbar";
+import Footer from "./components/Navegation/Footer";
+import Hero from "./components/HomeScreen/Hero";
+import Marcas from "./components/HomeScreen/Marcas";
+import Mercadorias from "./components/HomeScreen/Mercadorias";
+import Produtos1 from "./components/HomeScreen/Produtos1";
+import Parceiros from "./components/HomeScreen/Cards1";
+import ProdutosHomeCards from "./components/HomeScreen/Cards2";
+import ProdutosRelacionados from "./components/HomeScreen/ProdutosRelacionados";
+import ProdutosRelacionados2 from "./components/HomeScreen/ProdutosRelacionados2";
 
 function App() {
   return (
     <div className="">
       <Navbar />
-      <Hero/>
-      <Mercadorias/>
-      <Produtos1/>
-      
-      {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Learn React
-          </a>
-          </header> */}
+
+      {/* Responsive OK */}
+      <Hero />
+
+      {/* Responsive OK */}
+      <Mercadorias />
+
+      {/* Responsive OK */}
+      <Parceiros />
+
+      {/* Responsive OK */}
+      <Produtos1 />
+
+      <ProdutosHomeCards />
+
+      {/* Responsive OK */}
+      <ProdutosRelacionados2 />
+
+      {/* Responsive OK */}
+      {/* <Marcas /> */}
+
+      {/* Responsive OK */}
+      {/* <ProdutosRelacionados /> */}
+
+      {/* Responsive OK */}
+      <Footer />
     </div>
   );
 }

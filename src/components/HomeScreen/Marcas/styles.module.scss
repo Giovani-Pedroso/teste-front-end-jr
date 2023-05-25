@@ -1,0 +1,25 @@
+@use "../../../variables" as v;
+.section {
+  padding: 0px v.$def_pading;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: v.$bold;
+  color: v.$rosa_primario;
+  text-align: center;
+}
+
+.containerMarcar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 860px) {
+  .containerMarcar {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

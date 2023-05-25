@@ -1,0 +1,65 @@
+@use "../../../../../variables" as v;
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border-radius: 14px;
+  width: 70%;
+}
+
+.title {
+  text-align: center;
+  color: #3f3f40;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.title span {
+  font-weight: v.$bold;
+  font-size: 21px;
+}
+
+.container p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario input {
+  font-size: 12px;
+  border-color: #2a2a2a;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.formulario button {
+  border: none;
+  border-radius: 6px;
+  width: 62px;
+  height: 100%;
+  cursor: pointer;
+  background-color: v.$rosa_primario;
+  color: white;
+  font-size: 14px;
+  font-weight: v.$bold;
+}
+
+.formulario button:hover {
+  background-color: v.$rosa_secundario;
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: 100%;
+  }
+}

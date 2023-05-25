@@ -1,0 +1,55 @@
+@use "../../../../variables" as v;
+
+.container {
+  padding: 20px v.$def_pading;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // border-bottom-width:1px;
+  // border-bottom-color:
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.links {
+  font-weight: 200;
+  font-size: 12px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.links li {
+  margin: 10px 0;
+}
+
+.institucional {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+  .institucional {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cadastro {
+    width: 100%;
+  }
+  .container {
+    padding: 20px v.$mobile_pading;
+    flex-direction: column;
+  }
+}

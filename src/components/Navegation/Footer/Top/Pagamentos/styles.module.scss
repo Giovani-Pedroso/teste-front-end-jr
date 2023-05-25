@@ -1,0 +1,33 @@
+@use "../../../../../variables" as v;
+
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.links {
+  font-weight: 300;
+  font-size: 12px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.links li {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+@media (max-width: 860px) {
+  .links {
+    margin-bottom: 36px;
+  }
+}

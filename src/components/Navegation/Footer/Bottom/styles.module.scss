@@ -1,0 +1,46 @@
+@use "../../../../variables" as v;
+
+.bottom {
+  display: flex;
+  // width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px v.$def_pading;
+}
+
+.copyright {
+  color: white;
+  max-width: 50%;
+  text-align: left;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.logos img {
+  margin-left: 20px;
+}
+
+@media (max-width: 860px) {
+  .bottom {
+    flex-direction: column;
+    align-items: star;
+    padding: 20px v.$mobile_pading;
+  }
+  .copyright {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .logos {
+    align-items: start;
+    width: 100%;
+  }
+  .logos img {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,72 @@
+@use "../../../variables" as v;
+
+.hero {
+  background-image: url(./imgs/hero.webp);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 490px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+  color: black;
+  mix-blend-mode: darken;
+}
+
+.title {
+  font-weight: v.$semi_bold;
+  color: white;
+  text-align: left;
+  font-size: 48px;
+}
+
+.subtitle {
+  font-weight: v.$semi_bold;
+  color: white;
+  text-align: left;
+  font-size: 36px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px v.$def_pading;
+  margin-left: 144px;
+}
+
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: v.$rosa_primario;
+  color: white;
+  font-weight: v.$semi_bold;
+  padding: 10px 20px;
+  width: 200px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: v.$rosa_secundario;
+  text-decoration: underline;
+}
+
+@media (max-width: 860px) {
+  .container {
+    margin-left: 0px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}

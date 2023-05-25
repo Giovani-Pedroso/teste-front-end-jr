@@ -1,0 +1,40 @@
+@use "../../../../variables" as v;
+
+.title {
+  font-size: 30px;
+  font-weight: v.$bold;
+  color: v.$rosa_primario;
+  text-align: center;
+}
+
+.containerMarca {
+  // border-radius: 50%;
+  height: 211px;
+  width: 211px;
+  box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.13);
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.marca {
+  width: 80%;
+  height: 80%;
+}
+
+.containerMarca:hover {
+  border-width: 10px;
+  border-color: v.$rosa_primario;
+  box-shadow: 0px 7px 20px 0px #f7196350;
+  // background-color: v.$rosa_primario;
+}
+
+@media (max-width: 860px) {
+  .containerMarca {
+    height: 111px;
+    width: 111px;
+  }
+}

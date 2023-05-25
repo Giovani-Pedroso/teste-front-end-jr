@@ -1,0 +1,33 @@
+#+title: Teste técnico
+
+
+Website criado para a empresa Econverse como requisito para a vaga de Desenvolvedor Júnior, site criado com ReactJs, devido aos requisitos do projeto evitou-se o uso de meta frameworks (NextJs) e bibliotecas de estilização ( tailwindCss, Bootstrap) sendo usado Sass para substituição. O site é totalmente responsivo podendo ser acessado por computadores e celulares através desse [[https://teste-front-end-jr-xi.vercel.app/][LINK]].
+
+* Instalação 
+
+[ copiar o anterior]
+
+* Detalhes técnicos
+
+Para a construção do projeto foi utilizado o ReactJs em sua forma pura, para a estilização utilizou-se o Sass. Os arquivos do projeto foram organizados seguindo o diagrama abaixo:
+
+[ diagrama ]
+
+Para a criação dos Carrosséis utilizou-se a biblioteca SLIDER
+** Desempenho
+
+Para avaliar o desempenho do site utilizou-se a extensão Google Lighthouse mas existe outra maneira:  o teste pode ser replicado usando o site PAGE_SPEED
+
+[ imagem resultado ]
+
+*** Performance 
+
+Após realizados os testes ficou evidente que a principal razão pelo baixo score foi o carregamento das imagens, uma possível solução seria a implementação de um sistema de Lazy loading
+
+*** Acessibilidade 
+
+O score foi afetado pelo baixo contraste de alguns componentes porém afetaria a identidade visual do site e o ganho não seria significativo então optou-se por não aplicar tais mudanças
+
+*** SEO
+
+O baixo score nesse tópico deve-se ao fato de que algumas tags <a> não possuem um endereço real, tal pontuação é esperada devido ao fato desse site ter sido construído com o objetivo de testar os candidatos à vaga  de desenvolvedores

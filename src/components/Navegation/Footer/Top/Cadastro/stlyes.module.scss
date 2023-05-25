@@ -1,0 +1,17 @@
+@use "../../../../../variables" as v;
+
+.container {
+  background-color: white;
+}
+
+.title {
+  color: #3f3f40;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.title span {
+  font-weight: v.$bold;
+  font-size: 21px;
+}
