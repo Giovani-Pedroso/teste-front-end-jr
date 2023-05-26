@@ -16,7 +16,7 @@ function App() {
       <Navbar />
 
       {/* Responsive OK */}
-      <Hero />
+      {/* <Hero /> */}
 
       {/* Responsive OK */}
       <Mercadorias />

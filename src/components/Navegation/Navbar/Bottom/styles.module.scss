@@ -1,0 +1,68 @@
+@use "../../../../variables" as v;
+
+.bottomNav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.destaque {
+  color: v.$rosa_primario;
+  font-weight: v.$semi_bold;
+}
+
+.iconTopNav {
+  margin-right: 10px;
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 8px;
+  width: 100%;
+  background-color: v.$rosa_primario;
+  font-weight: v.$bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+  background-color: red;
+}
+
+.button:hover {
+  background-color: v.$rosa_secundario;
+}
+
+.button:active {
+  background-color: v.$rosa_primario;
+}
+
+@media (max-width: 860px) {
+  .button {
+    display: block;
+  }
+  .button:hover {
+    background-color: v.$rosa_primario;
+  }
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+    a {
+      margin: 10px 0px;
+    }
+  }
+}

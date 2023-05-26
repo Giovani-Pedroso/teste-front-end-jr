@@ -1,13 +1,13 @@
 import MidNav from "./Mid";
 import TopNav from "./Top";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import BottomNav from "./Bottom";
 
 type Props = {};
 
 export default function Navbar(props: Props) {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <TopNav />
       <MidNav />
       <BottomNav />

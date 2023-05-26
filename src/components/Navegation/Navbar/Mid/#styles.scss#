@@ -1,0 +1,50 @@
+@use "../../../../variables" as v;
+
+.midNav {
+  display: flex;
+  padding: 10px v.$def_pading;
+  align-items: center;
+
+  //background-color: #000;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px 40px;
+  min-width: 658px;
+  background-color: v.$gray_1;
+  //background-color: #000;
+  border-radius: 10px;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+
+.utilities {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 32px;
+  //color: var(--main-gray1);
+}
+
+a {
+  display: flex;
+  text-align: center;
+  fill: white;
+}

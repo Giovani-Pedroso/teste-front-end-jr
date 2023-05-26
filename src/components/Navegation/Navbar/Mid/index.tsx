@@ -4,48 +4,47 @@ import heart from "./imgs/Heart.svg";
 import cart from "./imgs/ShoppingCart.svg";
 import user from "./imgs/UserCircle.svg";
 import lupa from "./imgs/MagnifyingGlass.svg";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 type Props = {};
 
 export default function MidNav(props: Props) {
   return (
-    <div className="">
-      <div className="midNav">
-        {/*Logo*/}
-        <div>
+    <div>
+      <div className={styles.midNav}>
+        <div className={styles.logoNsearch}>
           <a href="/">
-            <img width="178" src={logo} />
+            <img src={logo} className={styles.logo} alt="logo site" />
           </a>
+          <div className={styles.searchBar}>
+            <input
+              className={styles.input}
+              placeholder="O que você está buscando?"
+            />
+            <button className={styles.button}>
+              <img src={lupa} className={styles.icon} alt="escudo" />
+            </button>
+          </div>
         </div>
-        {/*Search bar*/}
-        <div className="searchBar">
-          <input className="input" placeholder="O que você está buscando?" />
-          <button className="button">
-            <img src={lupa} className="icon" alt="escudo" />
-          </button>
-        </div>
-        {/*
-         */}
-        <div className="utilities">
+        <div className={styles.utilities}>
           <div>
             <a href="#">
-              <img src={box} className="icon" alt="escudo" />
+              <img src={box} className={styles.icon} alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={heart} className="icon" alt="escudo" />
+              <img src={heart} className={styles.icon} alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={user} className="icon" alt="escudo" />
+              <img src={user} className={styles.icon} alt="escudo" />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={cart} className="icon" alt="escudo" />
+              <img src={cart} className={styles.icon} alt="escudo" />
             </a>
           </div>
         </div>

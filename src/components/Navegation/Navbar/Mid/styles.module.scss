@@ -1,0 +1,93 @@
+@use "../../../../variables" as v;
+
+.midNav {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+
+  //background-color: #000;
+}
+
+.logoNsearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px 40px;
+  width: 100%;
+  min-width: 658px;
+  background-color: v.$gray_1;
+  //background-color: #000;
+  border-radius: 10px;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.utilities {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  width: 100%;
+}
+
+.utilities div {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.utilities div:hover {
+  outline-color: v.$rosa_primario;
+  outline-width: 2px;
+  outline-style: solid;
+}
+
+.logo {
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 32px;
+  //color: var(--main-gray1);
+}
+
+a {
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .midNav {
+    flex-direction: column;
+  }
+  .utilities {
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .searchBar {
+    width: auto;
+    min-width: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px 8px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .searchNUtils {
+    display: none;
+  }
+}

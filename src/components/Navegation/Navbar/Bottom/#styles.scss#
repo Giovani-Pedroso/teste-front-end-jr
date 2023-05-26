@@ -1,0 +1,14 @@
+@use "../../../../variables" as v;
+
+.bottomNav {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 16px;
+}
+
+.destaque {
+  color: v.$rosa_primario;
+  font-weight: v.$semi_bold;
+}
+
