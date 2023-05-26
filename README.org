@@ -8,7 +8,7 @@ Website criado para a empresa Econverse como requisito para a vaga de Desenvolve
 Para rodar o código localmente é necessário primeiro clonar esse repositório, isso pode ser feito usando esse comando :
 
 #+begin_src shell
-git clone https://github.com/Giovani-Pedroso/teste-front-end.git
+https://github.com/Giovani-Pedroso/teste-front-end-jr.git
 #+end_src>
 
 Feito o download do repositório é necessário instalar as dependências do projeto, na pasta do projeto, use esse comando:
