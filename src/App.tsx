@@ -14,31 +14,14 @@ function App() {
   return (
     <div className="">
       <Navbar />
-
-      {/* Responsive OK */}
-      {/* <Hero /> */}
-
-      {/* Responsive OK */}
+      <Hero />
       <Mercadorias />
-
-      {/* Responsive OK */}
-      <Parceiros />
-
-      {/* Responsive OK */}
       <Produtos1 />
-
+      <Parceiros />
+      <ProdutosRelacionados />
       <ProdutosHomeCards />
-
-      {/* Responsive OK */}
+      <Marcas />
       <ProdutosRelacionados2 />
-
-      {/* Responsive OK */}
-      {/* <Marcas /> */}
-
-      {/* Responsive OK */}
-      {/* <ProdutosRelacionados /> */}
-
-      {/* Responsive OK */}
       <Footer />
     </div>
   );

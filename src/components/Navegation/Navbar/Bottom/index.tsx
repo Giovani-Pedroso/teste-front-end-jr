@@ -15,12 +15,11 @@ export default function BottomNav(props: Props) {
     <div className={styles.bottomNav}>
       <div className={styles.buttonContainer}>
         <button className={styles.button} onClick={handleClick}>
-          {showCategorias ? "Esconder" : "Mostar"} categorias
+          {!showCategorias ? "Esconder" : "Mostar"} categorias
         </button>
       </div>
       <div
-        className={`${styles.categorias} ${!showCategorias ? "" : styles.hidden
-          } `}
+        className={`${styles.categorias} ${showCategorias ? "" : styles.show} `}
       >
         <a href="#">Todas Categorias</a>
         <a href="#">Supermercado</a>

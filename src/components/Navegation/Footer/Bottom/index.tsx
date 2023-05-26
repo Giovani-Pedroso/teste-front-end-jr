@@ -14,8 +14,8 @@ export default function FooterBottom(props: Props) {
         autorização.
       </p>
       <div className={styles.logos}>
-        <img src={logoEconverce} />
-        <img src={logoVtex} />
+        <img src={logoEconverce} alt="econverse Logo" />
+        <img src={logoVtex} alt="Vtex Logo" />
       </div>
     </div>
   );
