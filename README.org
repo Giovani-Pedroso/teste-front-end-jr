@@ -61,23 +61,16 @@ Para a criação dos Carrosséis utilizou-se a biblioteca SLIDER
 Abaixo é possível ver como o site ficou em alguns aparelhos 
 
 Pc
-<p align="center">
 [[./images_readme/pc_screen.png]]
-</p>
 
 Samsung A32
-<p align="center">
 [[./images_readme/a32_screen.jpeg]]
-</p>
 
-iPhone
 
 
 ** Desempenho
 
-<p align="center">
 [[./images_readme/performance.png]]
-</p>
 
 Para avaliar o desempenho do site utilizou-se a extensão Google Lighthouse mas, existe outra maneira:  o teste pode ser replicado usando o site [[https://pagespeed.web.dev/][PAGE SPEED]], vale destacar que essa pontuação não é absoluta podendo variar devido a vários fatores.
 
@@ -92,33 +85,25 @@ Exemplo de pontuação: performance, acessibilidade, boas práticas, SEO; respec
 
 * Performance 
 
-<p align="center">
 [[./images_readme/per.png]]
-</p>
 
 Após realizados os testes ficou evidente que a principal razão do baixo score foi o carregamento das imagens, uma possível solução seria mudar a extensão das imagens fornecidas pela api para o formato .webp, ou ainda implementar uma política de cache para os arquivos estáticos do site
 
 * Acessibilidade 
 
-<p align="center">
 [[./images_readme/acc.png]]
-</p>
 
 O score foi afetado pelo baixo contraste de alguns componentes porém afetaria a identidade visual do site e o ganho não seria significativo então optou-se por não aplicar tais mudanças
 
 * Boas praticas
 
-<p align="center">
 [[./images_readme/best_pra.png]]
-</p>
 
 A queda da pontuação nesse critério se deve ao fato de que alguns componentes não respeitam o /aspec ratio/ de algumas imagens isso acontece em alguns formatos de telas, como alterações nesse componente poderiam afetar a responsividade do site e a mudança não impactaria o UX foi optado por relevar essa queda na pontuação. 
 
 * SEO
 
-<p align="center">
 [[./images_readme/seo.png]]
-</p>
 
 pontuação prefeita nada a declarar
 
