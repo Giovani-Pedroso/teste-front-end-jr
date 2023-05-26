@@ -14,7 +14,13 @@ export default function MidNav(props: Props) {
       <div className={styles.midNav}>
         <div className={styles.logoNsearch}>
           <a href="/">
-            <img src={logo} className={styles.logo} alt="logo site" />
+            <img
+              width={139}
+              height={51}
+              src={logo}
+              className={styles.logo}
+              alt="logo site"
+            />
           </a>
           <div className={styles.searchBar}>
             <input

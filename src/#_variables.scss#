@@ -5,10 +5,12 @@ $red_1: #f71963;
 
 $gray_1: #f0f0f0;
 $gray_2: #f7f5f2;
+$gray_3: #9f9f9f;
 
 $def_pading: 40px;
 $mobile_pading: 20px;
 
+$light:300;
 $semi_bold: 600;
 $medium_bold: 500;
 $bold: 700;
