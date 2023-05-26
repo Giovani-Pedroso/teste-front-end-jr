@@ -19,22 +19,27 @@ export default function Pagamentos(props: Props) {
         <h1 className={styles.title}>FORMAS DE PAGAMENTO</h1>
         <ul className={styles.links}>
           <li>
-            <img src={visa} alt="logo visa" />
-            <img src={elo} alt="logo elo" />
-            <img src={alelo} alt="logo alelo" />
+            <img width={48} height={16} src={visa} alt="logo visa" />
+            <img width={44} height={21} src={elo} alt="logo elo" />
+            <img width={39} height={26} src={alelo} alt="logo alelo" />
           </li>
           <li>
-            <img src={dinners} alt="logo dinners" />
-            <img src={ifood} alt="logo ifood" />
-            <img src={mastercard} alt="logo mastercard" />
+            <img width={56} height={15} src={dinners} alt="logo dinners" />
+            <img width={41} height={22} src={ifood} alt="logo ifood" />
+            <img
+              width={38}
+              height={29}
+              src={mastercard}
+              alt="logo mastercard"
+            />
           </li>
           <li>
-            <img src={pix} alt="logo pix" />
-            <img src={amex} alt="logo amex" />
-            <img src={ticket} alt="logo ticket" />
+            <img width={56} height={20} src={pix} alt="logo pix" />
+            <img width={32} height={31} src={amex} alt="logo amex" />
+            <img width={29} height={29} src={ticket} alt="logo ticket" />
           </li>
           <li>
-            <img src={sodexo} alt="logo sodexo" />
+            <img width={48} height={16} src={sodexo} alt="logo sodexo" />
           </li>
         </ul>
       </div>

@@ -25,14 +25,14 @@ export default function AboutUs(props: Props) {
       <div className={styles.social}>
         <div>
           <a href="#">
-            <img src={facebook} alt="facebook logo" />
+            <img width={22} height={22} src={facebook} alt="facebook logo" />
           </a>
         </div>
         <a href="#">
-          <img src={youtube} alt="youtube logo" />
+          <img width={23} height={22} src={youtube} alt="youtube logo" />
         </a>
         <a href="#">
-          <img src={instagram} alt="instagram logo" />
+          <img width={23} height={22} src={instagram} alt="instagram logo" />
         </a>
       </div>
     </div>

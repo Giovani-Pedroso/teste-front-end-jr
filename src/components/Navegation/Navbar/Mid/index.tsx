@@ -35,22 +35,46 @@ export default function MidNav(props: Props) {
         <div className={styles.utilities}>
           <div>
             <a href="#">
-              <img src={box} className={styles.icon} alt="escudo" />
+              <img
+                width={26}
+                height={26}
+                src={box}
+                className={styles.icon}
+                alt="caixa"
+              />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={heart} className={styles.icon} alt="escudo" />
+              <img
+                width={32}
+                height={32}
+                src={heart}
+                className={styles.icon}
+                alt="coracao"
+              />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={user} className={styles.icon} alt="escudo" />
+              <img
+                width={32}
+                height={32}
+                src={user}
+                className={styles.icon}
+                alt="usuario"
+              />
             </a>
           </div>
           <div>
             <a href="#">
-              <img src={cart} className={styles.icon} alt="escudo" />
+              <img
+                width={32}
+                height={32}
+                src={cart}
+                className={styles.icon}
+                alt="carinho"
+              />
             </a>
           </div>
         </div>
