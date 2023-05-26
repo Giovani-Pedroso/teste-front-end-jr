@@ -14,6 +14,10 @@ export default function Modal(props: Props) {
   return (
     <div className={styles.modal}>
       <div className={styles.container}>
+        <button onClick={props.exit} className={styles.close2}>
+          X
+        </button>
+        {/* <div className={styles.imgNtext}> */}
         <img src={props.img} />
         <div>
           <h1 className={styles.name}>{props.name}</h1>
@@ -22,6 +26,7 @@ export default function Modal(props: Props) {
           <a className={styles.detalhes} href="#">
             Veja mais detalhes do produto
           </a>
+          {/* </div> */}
         </div>
         <button onClick={props.exit} className={styles.close}>
           X

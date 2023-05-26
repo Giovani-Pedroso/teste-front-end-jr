@@ -42,7 +42,13 @@
   font-size: 12px;
 }
 
-.close {
+.imgNtext {
+  display: flex;
+  flex-direction: column;
+}
+
+.close,
+.close2 {
   position: relative;
   color: #222222;
   background-color: transparent;
@@ -54,7 +60,22 @@
   width: 32px;
   height: 32px;
 }
+.close2 {
+  display: none;
+}
 
 .close {
   color: red;
+}
+
+@media (max-width: 860px) {
+  .close {
+    display: none;
+  }
+  .close2 {
+    display: block;
+  }
+  .container {
+    flex-direction: column;
+  }
 }

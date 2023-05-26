@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.scss";
 import Navbar from "./components/Navegation/Navbar";
 import Footer from "./components/Navegation/Footer";
@@ -11,6 +12,10 @@ import ProdutosRelacionados from "./components/HomeScreen/ProdutosRelacionados";
 import ProdutosRelacionados2 from "./components/HomeScreen/ProdutosRelacionados2";
 
 function App() {
+  useEffect(() => {
+    document.title = "Teste tecnico econverse";
+  }, []);
+
   return (
     <div className="">
       <Navbar />
