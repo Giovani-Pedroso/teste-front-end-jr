@@ -11,7 +11,6 @@ type Props = {
 };
 
 export default function CardProduc(props: Props) {
-
   return (
     <div className={styles.containerCard}>
       <img
@@ -22,7 +21,7 @@ export default function CardProduc(props: Props) {
       <p className={styles.name}>{props.productName}</p>
       <p className={styles.description}>{props.descriptionShort}</p>
       <p className={styles.price}>
-        R$ <span>{(props.price).toFixed(2)}</span>
+        R$ <span>{(props.price / 100).toFixed(2)}</span>
       </p>
       <button
         onClick={() => {
